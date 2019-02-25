@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const hostname = '127.0.0.1'   // set constants
+const hostname = '0.0.0.0'    // allows access from remote computers
 const port = 3002
 
 app.get('/', function (req, res) {
