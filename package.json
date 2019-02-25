@@ -1,0 +1,26 @@
+{
+  "name": "node-express-app",
+  "version": "1.0.0",
+  "description": "A super simple web app with Node.js and the Express web framework",
+  "main": "app.js",
+  "dependencies": {
+    "express": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node-express-app"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "web",
+    "app"
+  ],
+  "author": "Denise Case",
+  "license": "MIT"
+}
