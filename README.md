@@ -42,13 +42,13 @@ Open PowerShell here as admin and start your app with node: `node app.js`
 ## Open a Browser Client
 
 1. Open a web browser. Try these URLs
-1. <http://127.0.0.1:3007/> or <http://localhost:3007/>.
-1. <http://localhost:3007/hello>
-1. <http://localhost:3007/big>
-1. <http://localhost:3007/greeting/42>
-1. <http://localhost:3007/yo/Lohita>
-1. <http://localhost:3007/yo/Rahul>
-1. <http://localhost:3007/yo/Teja>
+1. <http://127.0.0.1:3002/> or <http://localhost:3002/>.
+1. <http://localhost:3002/hello>
+1. <http://localhost:3002/big>
+1. <http://localhost:3002/greeting/42>
+1. <http://localhost:3002/yo/Lohita>
+1. <http://localhost:3002/yo/Rahul>
+1. <http://localhost:3002/yo/Teja>
 
 ## Modify and Restart
 
@@ -99,7 +99,7 @@ To create a file without a name, there are 3 common options:
 
 If you get:
 
-`Error: listen EADDRINUSE: address already in use 127.0.0.1:3007`
+`Error: listen EADDRINUSE: address already in use 127.0.0.1:3002`
 
 There is already an app running on the port. Hit CTRL+ALT+DELETE to see the tasks, and find the running app and Right-click / End Task to kill the current version.
 
@@ -143,5 +143,6 @@ Then restart the app as explained above.
 - [js-gui-vue](https://github.com/denisecase/js-gui-vue)
 - [js-gui-storage](https://github.com/profcase/js-gui-storage)
 - [node-server](https://github.com/denisecase/node-server)
-- [node-express](https://github.com/denisecase/node-express)
+- [node-express-app](https://github.com/denisecase/node-express-app)
 - [node-express-chat](https://github.com/denisecase/node-express-chat)
+- [node-express](https://github.com/denisecase/node-express)

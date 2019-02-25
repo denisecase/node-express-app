@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 const hostname = '127.0.0.1'   // set constants
-const port = 3007
+const port = 3002
 
 app.get('/', function (req, res) {
   res.send('Welcome home!')
