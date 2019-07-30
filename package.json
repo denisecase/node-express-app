@@ -4,15 +4,20 @@
   "description": "A super simple web app with Node.js and the Express web framework",
   "main": "app.js",
   "dependencies": {
+    "config": "latest",
     "express": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "node-express-app"
+    "url": "https://github.com/denisecase/node-express-app"
   },
   "keywords": [
     "JavaScript",
@@ -21,6 +26,5 @@
     "web",
     "app"
   ],
-  "author": "Denise Case",
-  "license": "MIT"
+  "author": "Denise Case"
 }
