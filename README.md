@@ -146,7 +146,7 @@ Then restart the app as explained above.
 - web request
 - web response
 - web security & [Helmet](https://helmetjs.github.io/)
-- [Heroku hosting](https://devcenter.heroku.com/articles/deploying-nodejs)
+- [Heroku hosting](https://devcenter.heroku.com/articles/heroku-cli)
 
 ## See Also
 
