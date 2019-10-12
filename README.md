@@ -23,32 +23,28 @@
 1. Node.js installed
 2. npm Node Package Manager (comes with Node.js)
 
-## .gitignore
+## Keep Some Files out of the Repo
 
 We added a .gitignore file to list files and folders we don't want to commit to the repo (e.g., the very large node_modules folder and our personal settings for VS Code).
 
-## Dependencies
+## Make Use of Free Packages
 
 In addition to Node.js, we use additional free software packages.
 These are listed in package.json:
 
 - [Express web framework](https://expressjs.com/)
 - [Config](https://www.npmjs.com/package/config)
-- [Nodemon - live updates](https://nodemon.io/) - only needed during development
+- [Nodemon - live updates](https://nodemon.io/)
 
 Development dependencies are listed separately in package.json as these aren't needed in production (e.g. when hosting your live app with a cloud provider).
 
-## Dependency Versions
+## Keep Dependencies Current
 
-For example apps, we use version "latest" to stay current. Choosing a version is better for production apps. Current versions of all packages are listed in the auto-generated package-lock.json.
+We use the "latest" version to keep current. In production, you'll choose a version to avoid breaking changes. Specific version numbers for all packages are kept in the auto-generated package-lock.json file.
 
-## Install Dependencies locally
+## Install Dependencies Locally
 
-Install the dependencies listed in package.json locally:
-
-1. Open PowerShell here as admin and run: `npm install`.
-2. Verify node_modules was created.
-3. Review the contents of node_modules.
+It's easy to install the dependencies so you can run and test your app locally. Open PowerShell here as Administrator, and run: `npm install`. Explore the new node_modules folder.
 
 ```PowerShell
 npm install
@@ -56,7 +52,7 @@ npm install
 
 ## Start App
 
-"Open PowerShell Here as Admin" and start your app with node: 
+"Open PowerShell Here as Admin" and start your app with the node command.
 
 ```PowerShell
 node app.js
@@ -64,7 +60,8 @@ node app.js
 
 ## Open a Browser Client
 
-1. Open a web browser. Try these URLs
+Open a web browser. Try these URLs:
+
 1. <http://127.0.0.1:3002/> or <http://localhost:3002/>.
 1. <http://localhost:3002/hello>
 1. <http://localhost:3002/big>
@@ -73,27 +70,25 @@ node app.js
 1. <http://localhost:3002/yo/Rahul>
 1. <http://localhost:3002/yo/Teja>
 
-## Modify and Restart
+## Modify and Restart Your Node Server
 
-1. Make changes to the server logic.
-1. Use CTRL-C, CTRL-C to stop your server.
-1. Restart the server to see your changes.
+After updating code, use hit CTRL-C CTRL-C to stop your Node server. Restart the server to see your changes.
 
-## Use Nodemon to listen for changes and restart automatically
+## OR Use Nodemon
 
-We can also use the scripts provided in package.json by prefacing them with npm:
+See package.json "scripts" and explore the "run dev" entry. This script starts the server with nodemon ("node monitor") instead of node. Nodemon listens for code changes and restarts automatically. Run a script by calling it with npm:
 
 ```PowerShell
 npm run dev
 ```
 
-See package.json to see how 'run dev' uses nodemon instead - a live monitor that listens for changes and restarts automatatically.
+## Find Your IP address
 
-## Use PowerShell and ipconfig to get your IP address
+Open PowerShell as Admin, run ipconfig. Locate your IPv4 address. Invite others on your network to interact with your server-side app.
 
-1. Open PowerShell as Admin, run ipconfig.
-1. Find your IPv4 address.
-1. Invite others to interact with your server-side app.
+```PowerShell
+ipconfig
+```
 
 ## Troubleshooting
 
@@ -101,9 +96,7 @@ If you get:
 
 `Error: listen EADDRINUSE: address already in use 127.0.0.1:3002`
 
-There is already an app running on the port. Hit CTRL+ALT+DELETE to see the tasks, and find the running app and Right-click / End Task to kill the current version.
-
-Then restart the app as explained above.
+There is already an app running on the port. Hit CTRL+ALT+DELETE to see the tasks, and find the running app and Right-click / End Task to kill the current version. Then restart the app.
 
 ## Terms
 
@@ -132,24 +125,33 @@ Then restart the app as explained above.
 
 ## Optional: Create an Express app from scratch
 
-1. Create a folder for the app.
-1. In the folder, create a file named app.js.
-1. In the folder, open PowerShell and run `npm init` to generate a package.json with app information.
-1. Add README.md.
-1. Add .gitignore.
+1. Create a folder for the app (use lower-case-kebob-case).
+1. Add app.js, README.md, and .gitignore.
+1. Open PowerShell and run `npm init` to generate package.json.
 
-## Optional: Create .gitignore (file with no name - just an extension)
+```PowerShell
+npm install
+node app.js
+```
 
-There are many ways to create a file without a name (e.g., .gitignore)
+## Optional: Creating files
 
-1. In Windows File Explorer, create ".gitignore." (Type a dot at beginning and at the end. It will drop the second dot.
-2. In Git Bash: `touch .gitignore`
-3. In PowerShell:  `ni .gitignore`
-4. In VS Code: simply right-click and add new file named .gitignore
+In PowerShell, use New-Item:
+
+```PowerShell
+ni .gitignore
+```
+
+OR in Bash, use touch:
+
+```Bash
+touch .gitignore
+```
 
 ## Optional: Deployment
 
-Experiment with Heroku, a place to deploy and test an app for free. Install the Heroku command line interface (CLI). On Windows, use Git Bash to execute the commands. Commands will NOT work in PowerShell. We can add another alias for 'heroku' like we have done for 'origin'.
+Heroku will host a server-side app for free. Install the Heroku command line interface (CLI).
+On Windows, use Git Bash to execute the commands - NOT PowerShell. Add an alias for 'heroku' in addition to 'origin'.
 
 - [Heroku hosting](https://devcenter.heroku.com)
 - [Git Bash Shell for Heroku CLI](https://devcenter.heroku.com/articles/git)
@@ -157,4 +159,3 @@ Experiment with Heroku, a place to deploy and test an app for free. Install the 
 ## See Also
 
 - [More App Examples](https://profcase.github.io/web-apps-list/)
-- [npx fixpack (to auto-organize package.json)](https://www.npmjs.com/package/fixpack)

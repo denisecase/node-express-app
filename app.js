@@ -18,7 +18,17 @@ const port = process.env.PORT || config.get("port");
 
 // declare your callback function the old way
 app.get('/', function (req, res) {
-  res.send('Welcome home!')
+  res.send('Welcome to the default page!  <br> <br>' +
+    'Try going to different URIs by adding these at the end: <br> <br>' +
+    '/hello <br>' +
+    '/big <br>' +
+    '/json <br>' +
+    '/greeting/yourname <br>' +
+    '/yo/Dr.Rogers <br>' +
+    '/fancy/?first=Denise&last=Case <br>' +
+    '<br> <br>' +
+    'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
+  )
 })
 
 // or use the new arrow function syntax
@@ -49,9 +59,9 @@ app.get('/yo/:buddy', (req, res) => {
 
 // provide multiple query parameters with ? and &
 app.get('/fancy', (req, res) => {
-const first = req.query.first
-const last = req.query.last
-res.send(`Hello ${first} ${last}!`)
+  const first = req.query.first
+  const last = req.query.last
+  res.send(`Hello ${first} ${last}!`)
 })
 
 // Use middleware to handle all non-managed routes (e.g. /xyz)
