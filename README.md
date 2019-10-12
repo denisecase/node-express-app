@@ -149,7 +149,7 @@ There are many ways to create a file without a name (e.g., .gitignore)
 
 ## Optional: Deployment
 
-Experiment with Heroku, a place to deploy and test an app for free. Install the Heroku command line interface (CLI). On Windows, use Git Bash to execute the commands. Commands will NOT work in PowerShell.
+Experiment with Heroku, a place to deploy and test an app for free. Install the Heroku command line interface (CLI). On Windows, use Git Bash to execute the commands. Commands will NOT work in PowerShell. We can add another alias for 'heroku' like we have done for 'origin'.
 
 - [Heroku hosting](https://devcenter.heroku.com)
 - [Git Bash Shell for Heroku CLI](https://devcenter.heroku.com/articles/git)
