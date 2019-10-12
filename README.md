@@ -95,23 +95,6 @@ See package.json to see how 'run dev' uses nodemon instead - a live monitor that
 1. Find your IPv4 address.
 1. Invite others to interact with your server-side app.
 
-## Optional: Create an Express app from scratch
-
-1. Create a folder for the app.
-1. In the folder, create a file named app.js.
-1. In the folder, open PowerShell and run `npm init` to generate a package.json with app information.
-1. Add README.md.
-1. Add .gitignore.
-
-## Optional: Create .gitignore (file with no name - just an extension)
-
-There are many ways to create a file without a name (e.g., .gitignore)
-
-1. In Windows File Explorer, create ".gitignore." (Type a dot at beginning and at the end. It will drop the second dot.
-2. In Git Bash: `touch .gitignore`
-3. In PowerShell:  `ni .gitignore`
-4. In VS Code: simply right-click and add new file named .gitignore
-
 ## Troubleshooting
 
 If you get:
@@ -146,7 +129,30 @@ Then restart the app as explained above.
 - web request
 - web response
 - web security & [Helmet](https://helmetjs.github.io/)
-- [Heroku hosting](https://devcenter.heroku.com/articles/heroku-cli)
+
+## Optional: Create an Express app from scratch
+
+1. Create a folder for the app.
+1. In the folder, create a file named app.js.
+1. In the folder, open PowerShell and run `npm init` to generate a package.json with app information.
+1. Add README.md.
+1. Add .gitignore.
+
+## Optional: Create .gitignore (file with no name - just an extension)
+
+There are many ways to create a file without a name (e.g., .gitignore)
+
+1. In Windows File Explorer, create ".gitignore." (Type a dot at beginning and at the end. It will drop the second dot.
+2. In Git Bash: `touch .gitignore`
+3. In PowerShell:  `ni .gitignore`
+4. In VS Code: simply right-click and add new file named .gitignore
+
+## Optional: Deployment
+
+Experiment with Heroku, a place to deploy and test an app for free. Install the Heroku command line interface (CLI). On Windows, use Git Bash to execute the commands. Commands will NOT work in PowerShell.
+
+- [Heroku hosting](https://devcenter.heroku.com)
+- [Git Bash Shell for Heroku CLI](https://devcenter.heroku.com/articles/git)
 
 ## See Also
 
