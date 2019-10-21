@@ -25,6 +25,7 @@ app.get('/', function (req, res) {
     '/json <br>' +
     '/greeting/yourname <br>' +
     '/yo/Dr.Rogers <br>' +
+    '/fortune <br>' +
     '/fancy/?first=Denise&last=Case <br>' +
     '<br> <br>' +
     'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'

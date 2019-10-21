@@ -69,6 +69,7 @@ Open a web browser. Try these URLs:
 1. <http://localhost:3002/yo/Lohita>
 1. <http://localhost:3002/yo/Rahul>
 1. <http://localhost:3002/yo/Teja>
+1. <http://localhost:3002/fortune>
 
 ## Modify and Restart Your Node Server
 
