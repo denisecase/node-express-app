@@ -95,6 +95,7 @@ app.listen(port, hostname, () => {
   console.log(`   Try /hello`)
   console.log(`   Try /big`)
   console.log(`   Try /json`)
+  console.log(`   Try /fortune`)
   console.log(`   Try /greeting/yourname`)
   console.log(`   Try /yo/Dr.Rogers`)
   console.log(`   Try /fancy/?first=Denise&last=Case`)
