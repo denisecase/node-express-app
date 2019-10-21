@@ -57,11 +57,28 @@ app.get('/yo/:buddy', (req, res) => {
   res.send(`<h1>Yo, ${req.params.buddy}!</h1>`)
 })
 
-// provide multiple query parameters with ? and &
+// provide multiple query parameters (named first and last) with ? and &
 app.get('/fancy', (req, res) => {
   const first = req.query.first
   const last = req.query.last
   res.send(`Hello ${first} ${last}!`)
+})
+
+let fortunes = ['It is certain.', 'It is decidedly so.', 'Without a doubt.', 'Yes - definitely.',
+'You may rely on it', 'As I see it, yes.', 'Most likely', 'Outlook good.', 'Yes.', 'Signs point to yes.',
+'Reply hazy, try again.', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 
+'Concentrate and ask again.', 'Don\'t count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.',
+'Very doubtful.']
+
+// Implements a Magic 8 Ball service
+app.get('/fortune', (req,res) => {
+  if(isEmpty(req.query)){
+    res.send('<h2>You wish to know the future?</h2>' +
+             '<p>Ask a question in the query string, e.g., http://localhost:3002/fortune?Will I become rich? <br/>' +
+             '<p>The Magic 8 Ball will answer!</p>')
+  } else {
+    res.send(`The answer is ... wait for it ... ${fortunes[randomInt(0, fortunes.length)]}`)
+  }
 })
 
 // Use middleware to handle all non-managed routes (e.g. /xyz)
@@ -83,3 +100,17 @@ app.listen(port, hostname, () => {
   console.log('\n Hit CTRL-C CTRL-C to stop\n')
 })
 
+// Utility to see if an object is empty or not
+
+function isEmpty(obj) {
+  for(var key in obj) {
+      if(obj.hasOwnProperty(key))
+          return false;
+  }
+  return true;
+}
+
+// generates a random value in [low,high) 
+function randomInt(low, high) {
+  return Math.floor(Math.random() * (high - low) + low)
+}
