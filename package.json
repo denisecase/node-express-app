@@ -10,9 +10,9 @@
     "Denise Case <dcase@nwmissouri.edu> (https://github.com/profcase)"
   ],
   "dependencies": {
-    "config": "3.3.2",
+    "config": "3.3.3",
     "express": "4.17.2",
-    "helmet": "3.23.3"
+    "helmet": "5.0.1"
   },
   "devDependencies": {
     "nodemon": "latest"
