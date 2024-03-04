@@ -12,7 +12,7 @@
   "dependencies": {
     "config": "3.3.8",
     "express": "4.17.2",
-    "helmet": "5.0.2"
+    "helmet": "6.0.0"
   },
   "devDependencies": {
     "nodemon": "latest"
