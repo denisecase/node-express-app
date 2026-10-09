@@ -11,7 +11,7 @@ app.use(helmet())
 
 // Use hosting values if available, otherwise default 
 const environment = process.env.NODE_ENV || 'development'
-const hostname = process.env.HOSTNAME || config.get("hostname")
+const hostname = process.env.HOST || '0.0.0.0'
 const port = process.env.PORT || config.get("port");
 
 // Use Express app.get() methods to configure endpoints
